@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/telaCadastro.css">
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body>
+
+    <div class="titulo">
+        <A href="home.html"><img  src="imgTelareceita/livro com pena.webp"  alt=""></A>
+        
+    </div>
+
+
+    <div class="bannerCadastro">
+        <div class="containerLogin">
+            <div id="cardErro">
+                <span id="mensagem_erro"></span>
+            </div>
+
+            <div class="container">
+                <h1>CADASTRO</h1>
+                <p>Por favor, preencha este formulário para criar uma conta..</p>
+                <hr>
+
+                <label><b>Nome</b></label>
+                <input type="text" placeholder="Escreva seu nome" id='nome_input'>
+
+                <label> <b>Email</b></label>
+                <input type="text" placeholder="Escreva seu email" id='email_input'>
+
+                <label><b>Senha</b></label>
+                <input type="password" placeholder="Escreva uma senha" id="senha_input">
+
+                <label><b>Repita a senha</b></label>
+                <input type="password" placeholder="Repita a senha" id="confirmacao_senha_input">
+                <hr>
+                <p>Ao criar uma conta você concorda com nossos <a href="#">Termos de privacidade</a>.</p>
+
+                <button onclick="cadastrar()" class="registerbtn">Cadastrar</button>
+            </div>
+
+            <div class="container signin">
+                <p>Ja tem uma conta? <a href="telaLogin.html">entrar</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    function cadastrar() {
+        //  aguardar();
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+        var nomeVar = nome_input.value;
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+        var confirmacaoSenhaVar = confirmacao_senha_input.value;
+
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+    alert('Preencha todos os campos!')
+
+    return false;
+}
+
+if (emailVar.indexOf("@") == -1 || emailVar.startsWith("@") == true || emailVar.endsWith("@") == true || (emailVar.endsWith(".com") == false && emailVar. endsWith(".school") == false && emailVar.endsWith(".com.br") == false)) {
+    alert("Ops, e-mail inválido! Verifique e tente novamente.");
+
+    return false;
+}
+
+if (senhaVar != confirmacaoSenhaVar) {
+    alert("As senhas inseridas devem ser iguais para prosseguir!");
+
+    return false;
+}
+
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                nomeServer: nomeVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        })
+            .then(function (resposta) {
+
+                console.log("resposta: ", resposta);
+
+                if (resposta.ok) {
+                    cardErro.style.display = "block";
+
+                    mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+                    setTimeout(() => {
+                        window.location = "telaLogin.html";
+                    }, "2000")
+
+                    // limparFormulario();
+                    // finalizarAguardar();
+                } else {
+                    throw ("Houve um erro ao tentar realizar o cadastro!");
+                }
+            }).catch(function (resposta) {
+                console.log(`#ERRO: ${resposta}`);
+                // finalizarAguardar();
+            });
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        cardErro.style.display = "none"
+    }
+
+
+
+</script>

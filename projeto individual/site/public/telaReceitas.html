@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>telaReceitas</title>
+    <link rel="stylesheet" href="css/telaReceitas.css">
+    <link rel="icon" href="bloco de grama minecraft png - Download grátis.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/funcoes.js"></script>
+</head>
+<body onload="validarSessao();">
+    <div class="header"></div>
+    <div class="navbar">
+        <li class="item"><a href="index.html"> <img src="imgTelareceita/grama.webp" alt=""> INICIO</a></li>
+        <li class="item"><A href="telaReceitas.html"><img src="imgTelareceita/livro com pena.webp" alt="">  <b style=" text-shadow: -15px 5px 20px #105e92;">   LIVRO DE RECEITAS</b> </A></li>
+        <!-- <li class="item"><img src="imgTelareceita/espada.webp" alt=""> FORUM</li> -->
+        <li class="item" style=" cursor: pointer;"><img src="imgTelareceita/balde com bixo.webp" alt=""><div  onclick="limparSessao()">
+            <h3>Sair</h3>
+        </div></li>
+
+    </div>
+    <div class="content">
+<div class="topo">
+    <span id="hdr" style="display: block;"> Clique no item para ver a sua receita</span>
+    
+    <div class="topoReceita"><img id="receita" src="" alt=""> </div>
+</div>
+<div style="width: 100%;">
+        <span class="basico">Basico: </span> <span class="basico" style='margin-left: 370px'>Ferramentas: </span> </div>
+        <div class="esquerda" style="width: 403px; height: 100px; margin-bottom: 50px; " >
+           <li> <img onclick="craft(1)"   src="imgTelareceita/madeira.webp" alt=""> </li>
+           <li> <img onclick="craft(2)  " src="imgTelareceita/palito.webp" alt=""> </li>
+           <li> <img onclick="craft(3) " src="imgTelareceita/tocha.webp" alt=""> </li>
+           <li> <img onclick="craft(4) " src="imgTelareceita/Crafting_Table_JE4_BE3.webp" alt=""> </li>
+           <li> <img onclick="craft(5)" src="imgTelareceita/Locked_Chest.webp" alt=""> </li>
+           <li> <img onclick="craft(6) " src="imgTelareceita/fornalha zica.webp" alt=""> </li>
+           <li> <img onclick="craft(7)" src="imgTelareceita/img_ladder.png" alt=""> </li>
+           <li> <img onclick="craft(8) " src="imgTelareceita/cercaaa.webp" alt=""> </li>
+           <li> <img onclick="craft(9) " src="imgTelareceita/barco.webp" alt=""> </li>
+           <li> <img onclick="craft(10)" src="imgTelareceita/laje.webp" alt=""> </li>
+           <li> <img onclick="craft(11)" src="imgTelareceita/laje pedra.webp" alt=""> </li>
+           <li> <img onclick="craft(12)" src="imgTelareceita/placa.webp" alt=""> </li>
+           <li> <img onclick="craft(13)" src="imgTelareceita/porta.png" alt=""> </li>
+           <li> <img onclick="craft(14) " src="imgTelareceita/Painting_JE2_BE2.webp" alt=""> </li>
+           <li> <img onclick="craft(15) " src="imgTelareceita/unnamed.png" alt=""> </li>
+           <li> <img onclick="craft(16) " src="imgTelareceita/Madeira_de_Carvalho.webp" alt=""> </li>
+        </div>
+        <!-- <div class="basico">Ferramentas</div> -->
+        <div class="direita" style="width: 403px; height: 100px; margin-bottom: 50px; ">
+            <li> <img onclick="craft(17)  " src="imgTelareceita/picareta.webp" alt=""> </li>    
+            <li>  <img onclick="craft(18) " src="imgTelareceita/pa.webp" alt=""> </li>    
+            <li> <img onclick="craft(19) " src="imgTelareceita/machado.webp" alt=""> </li>    
+            <li> <img onclick="craft(20)" src="imgTelareceita/enxada.webp" alt=""> </li>    
+            <li> <img onclick="craft(21)  " src="imgTelareceita/vara.webp" alt=""> </li>    
+            <li> <img onclick="craft(22) " src="imgTelareceita/isqueiro.webp" alt=""> </li>    
+            <li> <img onclick="craft(23) " src="imgTelareceita/Tesoura.webp" alt=""> </li>    
+            <li> <img onclick="craft(24) " src="imgTelareceita/balde.webp" alt=""> </li>    
+            <li> <img onclick="craft(25)" src="imgTelareceita/relogiozica.webp" alt=""> </li>    
+            <li> <img onclick="craft(26) " src="imgTelareceita/Compass_JE2_BE2.webp" alt=""> </li>    
+            <li> <img onclick="craft(27) " src="imgTelareceita/mapa.webp" alt=""> </li>    
+            <li> <img onclick="craft(28) " src="imgTelareceita/shuker.webp" alt=""> </li>    
+        </div>
+        <!-- <div class="basico">Armaduras</div> -->
+        <div style="width: 100%;">
+            <span class="basico">Armaduras: </span> <span class="basico" style='margin-left: 326px'>Quimica: </span> </div>
+        <div class="armadura" style="width: 403px; height: 100px; margin-bottom: 50px;">
+            <li> <img onclick="craft(29) " src="imgTelareceita/capacete.png" alt=""> </li>
+            <li> <img onclick="craft(30) " src="imgTelareceita/peitoral_de_ferro.png" alt=""> </li>
+            <li> <img onclick="craft(31) " src="imgTelareceita/calçaFerro.webp" alt=""> </li>
+            <li> <img onclick="craft(32) " src="imgTelareceita/bota.webp" alt=""> </li>
+            <li> <img onclick="craft(33) " src="imgTelareceita/espadaFerro.webp" alt=""> </li>
+            <li> <img onclick="craft(34)" src="imgTelareceita/arco.gif" alt=""> </li>
+            <li> <img onclick="craft(35) " src="imgTelareceita/seta.png" alt=""> </li>
+            <li> <img onclick="craft(36) " src="imgTelareceita/cavalo.webp" alt=""> </li>
+            <li> <img onclick="craft(37) " src="imgTelareceita/escudo.png" alt=""> </li>
+            <li> <img onclick="craft(38)" src="imgTelareceita/setaespectro.png" alt=""> </li>
+            <li> <img onclick="craft(39) " src="imgTelareceita/setapoção.webp" alt=""> </li>
+            <li> <img onclick="craft(40) " src="imgTelareceita/tartaruga.webp" alt=""> </li>
+            <li> <img onclick="craft(41) " src="imgTelareceita/Crossbow.webp" alt=""> </li>
+           
+       
+        
+        
+        
+        
+        </div>
+        
+        <!-- <div class="basico">Fermentação</div> -->
+        <div class="armadura" style="width: 403px; height: 100px; margin-bottom: 50px;">
+            <li> <img onclick="craft(42) " src="imgTelareceita/pocao.png" alt=""> </li>
+            <li> <img onclick="craft(43) " src="imgTelareceita/caldeirao.webp" alt=""> </li>
+            <li> <img onclick="craft(44)" src="imgTelareceita/quimica.webp" alt=""> </li>
+            <li> <img onclick="craft(45) " src="imgTelareceita/melancia.webp" alt=""> </li>
+            <li> <img onclick="craft(46)  " src="imgTelareceita/fogo.gif" alt=""> </li>
+            <li> <img onclick="craft(47) " src="imgTelareceita/olho.webp" alt=""> </li>
+            <li> <img onclick="craft(48)  " src="imgTelareceita/magma.webp" alt=""> </li> 
+        
+        </div>
+      
+        <!-- <div class="basico">Comida</div> -->
+        <div style="width: 100%;">
+            <span class="basico">Comidas: </span> <span class="basico" style='margin-left: 350px'>Mecanismos: </span> </div>
+        <div class="armadura" style="width: 403px; height: 100px; margin-bottom: 50px;">
+            <li> <img onclick="craft(49) " src="imgTelareceita/bolo.png" alt=""> </li>
+            <li> <img onclick="craft(50) " src="imgTelareceita/pao.webp" alt=""> </li>
+            <li> <img onclick="craft(51)" src="imgTelareceita/biscoito.webp" alt=""> </li>
+            <li> <img onclick="craft(52) " src="imgTelareceita/pote.webp" alt=""> </li>
+            <li> <img onclick="craft(53)  " src="imgTelareceita/sopa.webp" alt=""> </li>
+            <li> <img onclick="craft(54) " src="imgTelareceita/cogumelo.webp" alt=""> </li>
+            <li> <img onclick="craft(55)  " src="imgTelareceita/macaDourada.webp" alt=""> </li> 
+            <li> <img onclick="craft(56)  " src="imgTelareceita/abobora.png" alt=""> </li> 
+            <li> <img onclick="craft(57)  " src="imgTelareceita/seed.webp" alt=""> </li> 
+            <li> <img onclick="craft(58)  " src="imgTelareceita/blocoDeMelancia.webp" alt=""> </li> 
+            <li> <img onclick="craft(59)  " src="imgTelareceita/açucar.png" alt=""> </li> 
+            <li> <img onclick="craft(60)  " src="imgTelareceita/canouraDourada.webp" alt=""> </li> 
+            <li> <img onclick="craft(61)  " src="imgTelareceita/torta.webp" alt=""> </li> 
+            <li> <img onclick="craft(62)  " src="imgTelareceita/sopaCoelho.webp" alt=""> </li> 
+            <li> <img onclick="craft(63)  " src="imgTelareceita/mel.webp" alt=""> </li> 
+        
+        </div>
+        <!-- <div class="basico">Mecanismos</div> -->
+        <div class="armadura" style="width: 403px; height: 200px; margin-bottom: 50px;" >
+            <li> <img onclick="craft(631) " src="imgTelareceita/placaDePressao.webp" alt=""> </li>
+            <li> <img onclick="craft(64) " src="imgTelareceita/placaDePressaoOuro.webp" alt=""> </li>
+            <li> <img onclick="craft(65)" src="imgTelareceita/alavanca.png" alt=""> </li>
+            <li> <img onclick="craft(66) " src="imgTelareceita/botao.png" alt=""> </li>
+            <li> <img onclick="craft(67)  " src="imgTelareceita/alçapao.webp" alt=""> </li>
+            <li> <img onclick="craft(68) " src="imgTelareceita/pistao.webp" alt=""> </li>
+            <li> <img onclick="craft(69)  " src="imgTelareceita/pistaoComMusgo.webp" alt=""> </li> 
+            <li> <img onclick="craft(70)  " src="imgTelareceita/portao.webp" alt=""> </li> 
+            <li> <img onclick="craft(71)  " src="imgTelareceita/repetidor.webp" alt=""> </li> 
+            <li> <img onclick="craft(72)  " src="imgTelareceita/dispenser.webp" alt=""> </li> 
+            <li> <img onclick="craft(73)  " src="imgTelareceita/jukebox.webp" alt=""> </li> 
+            <li> <img onclick="craft(74)  " src="imgTelareceita/minecart-–-minecraft-wiki.gif" alt=""> </li> 
+            <li> <img onclick="craft(75)  " src="imgTelareceita/Minecart_with_Furnace_JE3.webp" alt=""> </li> 
+            <li> <img onclick="craft(76)  " src="imgTelareceita/Minecart_with_Chest_JE4_BE2.webp" alt=""> </li> 
+            <li> <img onclick="craft(77)  " src="imgTelareceita/trilho.png"> </li> 
+            <li> <img onclick="craft(78)  " src="imgTelareceita/trilhoVermelho.webp"> </li> 
+            <li> <img onclick="craft(79)  " src="imgTelareceita/tochaRedstone.webp"> </li> 
+            <li> <img onclick="craft(80)  " src="imgTelareceita/RedstoneLampNew.webp"> </li> 
+            <li> <img onclick="craft(81)  " src="imgTelareceita/sla o q.png"> </li> 
+            <li> <img onclick="craft(82)  " src="imgTelareceita/sensorSolar.webp"> </li> 
+            <li> <img onclick="craft(83)  " src="imgTelareceita/dropper.png"> </li> 
+            <li> <img onclick="craft(84)  " src="imgTelareceita/funil.webp"> </li> 
+            <li> <img onclick="craft(85)  " src="imgTelareceita/carrinhoFunil.webp"> </li> 
+            <li> <img onclick="craft(86)  " src="imgTelareceita/carrinho tnt.webp"> </li> 
+            <li> <img onclick="craft(87)  " src="imgTelareceita/comparador.webp"> </li> 
+            <li> <img onclick="craft(88)  " src="imgTelareceita/bau.webp"> </li> 
+            <li> <img onclick="craft(89)  " src="imgTelareceita/açapaoDeFerro.webp"> </li> 
+            <li> <img onclick="craft(90)  " src="imgTelareceita/observador.webp"> </li> 
+            <li> <img onclick="craft(91)  " src="imgTelareceita/img_target.png"> </li> 
+        
+        </div>
+
+              
+        <!-- <div class="basico">Outros</div> -->
+        <div style="width: 100%;">
+            <span class="basico">Outros: </span> <span class="basico" style='margin-left: 364px'>Corantes: </span> </div>
+        <div class="armadura" style="width: 403px; height: 350px;">
+            <li> <img onclick="craft(92) " src="imgTelareceita/papel.webp" alt=""> </li>
+            <li> <img onclick="craft(93) " src="imgTelareceita/livro.webp" alt=""> </li>
+            <li> <img onclick="craft(94)" src="imgTelareceita/compena.webp" alt=""> </li>
+            <li> <img onclick="craft(95) " src="imgTelareceita/grade.webp" alt=""> </li>
+            <li> <img onclick="craft(96)  " src="imgTelareceita/cercaNether.webp" alt=""> </li>
+            <li> <img onclick="craft(97) " src="imgTelareceita/barraOuro.png   " alt=""> </li>
+            <li> <img onclick="craft(98)  " src="imgTelareceita/olhoEnder.webp" alt=""> </li> 
+            <li> <img onclick="craft(99)  " src="imgTelareceita/mesaEncatamento.webp" alt=""> </li> 
+            <li> <img onclick="craft(100)  " src="imgTelareceita/bolaFogo.webp" alt=""> </li> 
+            <li> <img onclick="craft(101)  " src="imgTelareceita/bauFim.webp" alt=""> </li> 
+            <li> <img onclick="craft(102)  " src="imgTelareceita/beacon.webp" alt=""> </li> 
+            <li> <img onclick="craft(103)  " src="imgTelareceita/bigorna.webp" alt=""> </li> 
+            <li> <img onclick="craft(104)  " src="imgTelareceita/vaso.png" alt=""> </li> 
+            <li> <img onclick="craft(105)  " src="imgTelareceita/moldura.webp" alt=""> </li> 
+            <li> <img onclick="craft(106)  " src="imgTelareceita/varaCenoura.webp" alt=""> </li> 
+            <li> <img onclick="craft(107)  " src="imgTelareceita/varaFungo.webp" alt=""> </li> 
+            <li> <img onclick="craft(108)  " src="imgTelareceita/Foguete.webp" alt=""> </li> 
+            <li> <img onclick="craft(109)  " src="imgTelareceita/estrelaFoguete.webp" alt=""> </li> 
+            <li> <img onclick="craft(110)  " src="imgTelareceita/laço.webp" alt=""> </li> 
+            <li> <img onclick="craft(111)  " src="imgTelareceita/tapete.webp" alt=""> </li> 
+            <li> <img onclick="craft(112)  " src="imgTelareceita/painelVidro.webp" alt=""> </li> 
+            <li> <img onclick="craft(113)  " src="imgTelareceita/couro.webp" alt=""> </li> 
+            <li> <img onclick="craft(114)  " src="imgTelareceita/banner.png" alt=""> </li> 
+            <li> <img onclick="craft(115)  " src="imgTelareceita/armorStand.png" alt=""> </li> 
+            <li> <img onclick="craft(116)  " src="imgTelareceita/endRod.webp" alt=""> </li> 
+            <li> <img onclick="craft(117)  " src="imgTelareceita/endCrystal.webp" alt=""> </li> 
+            <li> <img onclick="craft(118)  " src="imgTelareceita/IronNugget.webp" alt=""> </li> 
+            <li> <img onclick="craft(119)  " src="imgTelareceita/concreto.webp" alt=""> </li> 
+            <li> <img onclick="craft(120)  " src="imgTelareceita/fogueira.webp" alt=""> </li> 
+            <li> <img onclick="craft(121)  " src="imgTelareceita/andaime.webp" alt=""> </li> 
+            <li> <img onclick="craft(122)  " src="imgTelareceita/barril.webp" alt=""> </li> 
+            <li> <img onclick="craft(123)  " src="imgTelareceita/fornalha2.jpg" alt=""> </li> 
+            <li> <img onclick="craft(124)  " src="imgTelareceita/fumaça.webp" alt=""> </li> 
+            <li> <img onclick="craft(125)  " src="imgTelareceita/mesaGeografia.jpg" alt=""> </li> 
+            <li> <img onclick="craft(126)  " src="imgTelareceita/composteira.webp" alt=""> </li> 
+            <li> <img onclick="craft(127)  " src="imgTelareceita/mesaArco.webp" alt=""> </li> 
+            <li> <img onclick="craft(128)  " src="imgTelareceita/mesaFerreiro.jpg" alt=""> </li> 
+            <li> <img onclick="craft(129)  " src="imgTelareceita/cortadorPedra.webp" alt=""> </li> 
+            <li> <img onclick="craft(130)  " src="imgTelareceita/amolador.webp" alt=""> </li> 
+            <li> <img onclick="craft(131)  " src="imgTelareceita/lanterna.png" alt=""> </li> 
+            <li> <img onclick="craft(132)  " src="imgTelareceita/altar.webp" alt=""> </li> 
+            <li> <img onclick="craft(133)  " src="imgTelareceita/tear.webp" alt=""> </li> 
+            <li> <img onclick="craft(134)  " src="imgTelareceita/comeia.webp" alt=""> </li> 
+            <li> <img onclick="craft(135)  " src="imgTelareceita/corrente.png" alt=""> </li> 
+            <li> <img onclick="craft(136)  " src="imgTelareceita/NetheriteBarra.webp" alt=""> </li> 
+            <li> <img onclick="craft(137)  " src="imgTelareceita/tochaAlma.webp" alt=""> </li> 
+            <li> <img onclick="craft(138)  " src="imgTelareceita/respaw.png" alt=""> </li> 
+            <li> <img onclick="craft(139)  " src="imgTelareceita/magnetita.webp" alt=""> </li> 
+            <li> <img onclick="craft(140)  " src="imgTelareceita/vela.png" alt=""> </li> 
+            <li> <img onclick="craft(141)  " src="imgTelareceita/velaBranca.png" alt=""> </li> 
+            <li> <img onclick="craft(142)  " src="imgTelareceita/molduraZica.webp" alt=""> </li> 
+            <li> <img onclick="craft(143)  " src="imgTelareceita/paraRaio.webp" alt=""> </li> 
+            <li> <img onclick="craft(144)  " src="imgTelareceita/tapeteGrama.webp" alt=""> </li> 
+            <li> <img onclick="craft(145)  " src="imgTelareceita/vidroFosco.webp" alt=""> </li> 
+        
+        </div>
+
+
+        <!-- <div class="basico">Corantes</div> -->
+        <div class="armadura"  style="width: 403px; height: 100px;" >
+            <li> <img onclick="craft(146) " src="imgTelareceita/coranteRosa.png" alt=""> </li>
+            <li> <img onclick="craft(147) " src="imgTelareceita/coranteAmarelo.png" alt=""> </li>
+            <li> <img onclick="craft(148)" src="imgTelareceita/coranteCiano.png" alt=""> </li>
+            <li> <img onclick="craft(149) " src="imgTelareceita/corantePink.png" alt=""> </li>
+            <li> <img onclick="craft(150)  " src="imgTelareceita/coranteRoxo.png" alt=""> </li>
+            <li> <img onclick="craft(151) " src="imgTelareceita/coranteRoxo2.png" alt=""> </li>
+            <li> <img onclick="craft(152)  " src="imgTelareceita/coranteVerde.png" alt=""> </li> 
+            <li> <img onclick="craft(153)  " src="imgTelareceita/coranteAzulbebe.png" alt=""> </li> 
+            <li> <img onclick="craft(154)  " src="imgTelareceita/coranteLaranja.png" alt=""> </li> 
+            <li> <img onclick="craft(155)  " src="imgTelareceita/coranteBege.gif" alt=""> </li> 
+            <li> <img onclick="craft(156)  " src="imgTelareceita/coranteCinza.png" alt=""> </li> 
+            <li> <img onclick="craft(157)  " src="imgTelareceita/Farinha.png" alt=""> </li> 
+            <li> <img onclick="craft(158)  " src="imgTelareceita/CoranteBranc.png" alt=""> </li> 
+            <li> <img onclick="craft(159)  " src="imgTelareceita/CoranteAzul.png" alt=""> </li> 
+            <li> <img onclick="craft(160)  " src="imgTelareceita/coranteMarrom.png"> </li> 
+            <li> <img onclick="craft(161)  " src="imgTelareceita/corantePreto.png"> </li> 
+           
+        
+        </div>
+        <!-- <div class="basico">Lã</div> -->
+        <div style="width: 100%; height: 89px;">
+             <span class="basico" style='margin-left: 47px'>Lãs: </span> </div>
+        <div class="armadura" style="width: 403px; height: 100px; margin-top: 30px;">
+            <li> <img onclick="craft(162) " src="imgTelareceita/LacinzaClaro.png" alt=""> </li>
+            <li> <img onclick="craft(163) " src="imgTelareceita/Larosa.png" alt=""> </li>
+            <li> <img onclick="craft(164)" src="imgTelareceita/laVerde.png" alt=""> </li>
+            <li> <img onclick="craft(165) " src="imgTelareceita/laVermelho.png" alt=""> </li>
+            <li> <img onclick="craft(166)  " src="imgTelareceita/laMusgo.png" alt=""> </li>
+            <li> <img onclick="craft(167) " src="imgTelareceita/laPreta.png" alt=""> </li>
+            <li> <img onclick="craft(168)  " src="imgTelareceita/laRoxo.png" alt=""> </li> 
+            <li> <img onclick="craft(169)  " src="imgTelareceita/laAzul.png" alt=""> </li> 
+            <li> <img onclick="craft(170)  " src="imgTelareceita/laLaranja.png" alt=""> </li> 
+            <li> <img onclick="craft(171)  " src="imgTelareceita/laMarrom.png" alt=""> </li> 
+            <li> <img onclick="craft(172)  " src="imgTelareceita/laAmarela.png" alt=""> </li> 
+            <li> <img onclick="craft(173)  " src="imgTelareceita/laCiano.png" alt=""> </li> 
+            <li> <img onclick="craft(174)  " src="imgTelareceita/laAzulClaro.png" alt=""> </li> 
+            <li> <img onclick="craft(175)  " src="imgTelareceita/laMagenta.png" alt=""> </li> 
+            <li> <img onclick="craft(176)  " src="imgTelareceita/laCinza.png"> </li> 
+           
+           
+        
+        </div>
+        
+        <div>
+            <canvas class="myChart" id="myChart"  style="position: relative; height:40vh; width:80vw;"></canvas>
+          </div>
+          
+          <img class="imgSobre" src="imgTelareceita/capacete.png" alt="">
+          <img class="imgSobre" src="imgTelareceita/picareta.webp" alt="">
+          <img class="imgSobre" src="imgTelareceita/macaDourada.webp" alt="">
+          <img class="imgSobre" src="imgTelareceita/bau.webp" alt="">
+          <img class="imgSobre" src="imgTelareceita/tocha.webp" alt="">
+          <img class="imgSobre" src="imgTelareceita/fornalha zica.webp" alt="">
+          <img class="imgSobre" src="imgTelareceita/porta.png" alt="">
+          <img class="imgSobre" src="imgTelareceita/mapa.webp" alt="">
+          <img class="imgSobre" src="imgTelareceita/vela.png" alt="">
+          <img class="imgSobre" src="imgTelareceita/couro.webp" alt="">
+</div>
+
+<div class="footer">
+        <h2>Cleber Vicenzo &copy; 2022 - Todos os direitos reservados.</h2>
+      </div>
+</body>
+
+<script>
+    const  labels = [
+      'Capacete  ' ,
+      'Picareta',
+      'Maçã dourada',
+      'Bau',
+      'Tocha',
+      'Fornalha',
+      'Porta',
+      'Mapa',
+      'Vela',
+      'Couro',
+      
+    ];
+  
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: '',
+        backgroundColor: [
+      'rgba(255, 99, 132, 0.8)',
+      'rgba(255, 159, 64, 0.8)',
+      'rgba(255, 205, 86, 0.8)',
+      'rgba(75, 192, 192, 0.8)',
+      'rgba(54, 162, 235, 0.8)',
+      'rgba(153, 102, 255, 0.8)',
+      'rgba(255, 0, 0, 0.8)'
+    ],
+         
+        borderColor: '	rgba(8, 0, 0, 1)',
+        
+        data: [12 , 32 , 5, 8, 20, 30, 45, 22, 10, 34],
+        color:' #666',
+      }]
+    };
+  
+    const config = {
+      type: 'bar',
+      data: data,
+     
+      options: {}
+    };
+  </script>
+
+<script>
+const myChart = new Chart(
+  document.getElementById('myChart'),
+  config
+);
+</script>
+
+</html>
+
+<script>
+    var picareta = 0
+
+    function craft(construir) {
+        if (construir == 1) {
+            receita.src= 'imgTelareceita/receitaMadeira.gif';
+            hdr.style.display = 'none'
+        }
+
+        else if (construir == 2) {
+            receita.src= 'imgTelareceita/receitaPalito.png';
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 3) {
+            receita.src= 'imgTelareceita/receitaTocha.png' ;
+            hdr.style.display = 'none'    
+        }
+        else if (construir == 4) {
+            receita.src= 'imgTelareceita/receitaMesa.png' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 5) {
+            receita.src= 'imgTelareceita/receitaBau.png' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 6) {
+            receita.src= 'imgTelareceita/receitaFornalha.gif' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 7) {
+            receita.src= 'imgTelareceita/receitaEscada.png' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 8) {
+            receita.src= 'imgTelareceita/receitaCerca.gif' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 9) {
+            receita.src= 'imgTelareceita/receitaBarco.png' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 10) {
+            receita.src= 'imgTelareceita/receitaLaje.gif' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 11) {
+            receita.src= 'imgTelareceita/receitaLajePedra.gif' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 12) {
+            receita.src= 'imgTelareceita/receitaPlaca.png' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 13) {
+            receita.src= 'imgTelareceita/receitaPorta.gif' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 14) {
+            receita.src= 'imgTelareceita/receitaQuadro.png' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 15) {
+            receita.src= 'imgTelareceita/receitaCama.png' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 16) {
+            receita.src= 'imgTelareceita/receitaTronco.png'
+            hdr.style.display = 'none'
+        }
+        else if (construir == 17) {
+            receita.src= 'imgTelareceita/receitaPicareta.gif'
+            hdr.style.display = 'none'
+           picareta = picareta + 1
+        }
+        else if (construir == 18) {
+            receita.src= 'imgTelareceita/receitaPa.gif'
+            hdr.style.display = 'none' 
+        }
+        else if (construir == 19) {
+            receita.src= 'imgTelareceita/receitaMachado.gif' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 20) {
+            receita.src= 'imgTelareceita/receitaEnxada.gif' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 21) {
+            receita.src= 'imgTelareceita/receitaVara.png'
+             hdr.style.display = 'none'
+        }
+        else if (construir == 22) {
+            receita.src= 'imgTelareceita/receitaIsqueiro.png'
+            hdr.style.display = 'none'
+        }
+        else if (construir == 23) {
+            receita.src= 'imgTelareceita/receitaTezoura.png'
+            hdr.style.display = 'none'
+        }
+        else if (construir == 24) {
+            receita.src= 'imgTelareceita/receitaBalde.png'
+            hdr.style.display = 'none'
+        }
+        else if (construir == 25) {
+            receita.src= 'imgTelareceita/receitaRelogio.png' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 26) {
+            receita.src= 'imgTelareceita/receitaBussula.png'  
+            hdr.style.display = 'none'
+        }
+        else if (construir == 27) {
+            receita.src= 'imgTelareceita/receitaMapa.png'   
+            hdr.style.display = 'none'
+        }
+        else if (construir == 28) {
+            receita.src= 'imgTelareceita/receitaShuker.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 29) {
+            receita.src= 'imgTelareceita/receitaCapacete.gif'   
+            hdr.style.display = 'none' 
+        }
+        else if (construir == 30) {
+            receita.src= 'imgTelareceita/receitaPeitoral.gif'   
+            hdr.style.display = 'none'
+        }
+        else if (construir == 31) {
+            receita.src= 'imgTelareceita/Receitacalca.gif'  
+            hdr.style.display = 'none' 
+        }
+        else if (construir == 32) {
+            receita.src= 'imgTelareceita/receitaBota.gif'  
+            hdr.style.display = 'none' 
+        }
+        else if (construir == 33) {
+            receita.src= 'imgTelareceita/receitaEspada.gif'   
+            hdr.style.display = 'none'
+        }
+        else if (construir == 34) {
+            receita.src= 'imgTelareceita/receitaArco.png' 
+            hdr.style.display = 'none'
+        }
+        else if (construir == 35) {
+            receita.src= 'imgTelareceita/receitaSeta.png'  
+            hdr.style.display = 'none'
+        }
+        else if (construir == 36) {
+            receita.src= 'imgTelareceita/receitaCavalo.png'
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 37) {
+            receita.src= 'imgTelareceita/receitaEscudo.png'
+            hdr.style.display = 'none'   
+        }
+        else if (construir == 38) {
+            receita.src= 'imgTelareceita/receitaEspec.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 39) {
+            receita.src= 'imgTelareceita/receitaSetapocao.png'  
+            hdr.style.display = 'none'  
+
+        }
+        else if (construir == 40) {
+            receita.src= 'imgTelareceita/receitaTartaruga.png'    
+            hdr.style.display = 'none'
+        }
+        else if (construir == 41) {
+            receita.src= 'imgTelareceita/receitaCross.png'  
+            hdr.style.display = 'none'
+        }
+
+
+        else if (construir == 42) {
+            receita.src= 'imgTelareceita/receitaFrasco.png'  
+            hdr.style.display = 'none'   
+        }
+        else if (construir == 43) {
+            receita.src= 'imgTelareceita/receitaCaldeirao.png' 
+            hdr.style.display = 'none'     
+        }
+        else if (construir == 44) {
+            receita.src= 'imgTelareceita/ReceitaQuimica.png'  
+            hdr.style.display = 'none'    
+        }
+        else if (construir == 45) {
+            receita.src= 'imgTelareceita/receitaMelancia.png'    
+            hdr.style.display = 'none' 
+        }
+        else if (construir == 46) {
+            receita.src= 'imgTelareceita/receitaFogo.png' 
+            hdr.style.display = 'none'   
+        }
+        else if (construir == 47) {
+            receita.src= 'imgTelareceita/receitaOlho.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 48) {
+            receita.src= 'imgTelareceita/receitaMagma.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 49) {
+            receita.src= 'imgTelareceita/receitaBolo.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 50) {
+            receita.src= 'imgTelareceita/receitaPao.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 51) {
+            receita.src= 'imgTelareceita/receitaBiscoito.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 52) {
+            receita.src= 'imgTelareceita/receitaPote.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 53) {
+            receita.src= 'imgTelareceita/receitaSopa.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 54) {
+            receita.src= 'imgTelareceita/receitaSopaEstranha.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 55) {
+            receita.src= 'imgTelareceita/receitaMaca.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 56) {
+            receita.src= 'imgTelareceita/receitaAbobora.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 57) {
+            receita.src= 'imgTelareceita/receitaSemente.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 58) {
+            receita.src= 'imgTelareceita/receitaBlocoDeMelancia.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 59) {
+            receita.src= 'imgTelareceita/receitaAçucar.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 60) {
+            receita.src= 'imgTelareceita/receitaCenouraDourada.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 61) {
+            receita.src= 'imgTelareceita/receitaTortaDeAbobora.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 62) {
+            receita.src= 'imgTelareceita/receitaSopaDeCoelho.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 63) {
+            receita.src= 'imgTelareceita/receitaMel.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 631) {
+            receita.src= 'imgTelareceita/placaPressao.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 64) {
+            receita.src= 'imgTelareceita/placaPressaoouro.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 65) {
+            receita.src= 'imgTelareceita/ReceitaAlavanca.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 66) {
+            receita.src= 'imgTelareceita/ReceitaBotao.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 67) {
+            receita.src= 'imgTelareceita/ReceitaAlçapao.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 68) {
+            receita.src= 'imgTelareceita/ReceitaPistao.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 69) {
+            receita.src= 'imgTelareceita/ReceitaPistaoMusgo.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 70) {
+            receita.src= 'imgTelareceita/ReceitaPortao.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 71) {
+            receita.src= 'imgTelareceita/ReceitaRepetidor.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 72) {
+            receita.src= 'imgTelareceita/ReceitaDispenser.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 73) {
+            receita.src= 'imgTelareceita/ReceitaJukebox.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 74) {
+            receita.src= 'imgTelareceita/ReceitaCarrinho.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 75) {
+            receita.src= 'imgTelareceita/ReceitaCarrinhoFornalha.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 76) {
+            receita.src= 'imgTelareceita/ReceitaCarrinhoBau.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 77) {
+            receita.src= 'imgTelareceita/ReceitaTrilho.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 78) {
+            receita.src= 'imgTelareceita/ReceitaTrilhoVermelho.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 79) {
+            receita.src= 'imgTelareceita/ReceitaTochaRedstone.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 80) {
+            receita.src= 'imgTelareceita/ReceitaLampada.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 81) {
+            receita.src= 'imgTelareceita/ReceitaSla.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 82) {
+            receita.src= 'imgTelareceita/ReceitaSensor.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 83) {
+            receita.src= 'imgTelareceita/ReceitaLiberador.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 84) {
+            receita.src= 'imgTelareceita/ReceitaFunil.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 85) {
+            receita.src= 'imgTelareceita/ReceitaCarrinhoFunil.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 86) {
+            receita.src= 'imgTelareceita/ReceitaCarrinhoTnt.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 87) {
+            receita.src= 'imgTelareceita/ReceitaComparador.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 88) {
+            receita.src= 'imgTelareceita/ReceitaBauTrap.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 89) {
+            receita.src= 'imgTelareceita/ReceitaAlçapaoFerro.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 90) {
+            receita.src= 'imgTelareceita/ReceitaObservador.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 91) {
+            receita.src= 'imgTelareceita/ReceitaTargert.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 92) {
+            receita.src= 'imgTelareceita/ReceitaPapel.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 93) {
+            receita.src= 'imgTelareceita/ReceitaLivro.png' 
+            hdr.style.display = 'none'  
+        }
+        
+        else if (construir == 94) {
+            receita.src= 'imgTelareceita/ReceitaLivroPena.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 95) {
+            receita.src= 'imgTelareceita/ReceitaGrade.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 96) {
+            receita.src= 'imgTelareceita/ReceitaCerca2.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 97) {
+            receita.src= 'imgTelareceita/ReceitaOuro.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 98) {
+            receita.src= 'imgTelareceita/ReceitaOlhoFim.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 99) {
+            receita.src= 'imgTelareceita/ReceitaMesaEncantamento.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 100) {
+            receita.src= 'imgTelareceita/ReceitaBolaFogo.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 101) {
+            receita.src= 'imgTelareceita/ReceitaBauFim.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 102) {
+            receita.src= 'imgTelareceita/ReceitaBeacon.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 103) {
+            receita.src= 'imgTelareceita/ReceitaBigorna.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 104) {
+            receita.src= 'imgTelareceita/ReceitaVaso.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 105) {
+            receita.src= 'imgTelareceita/ReceitaMoldura.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 106) {
+            receita.src= 'imgTelareceita/ReceitaVaraCenoura.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 107) {
+            receita.src= 'imgTelareceita/ReceitaVaraFungo.png' 
+            hdr.style.display = 'none'  
+        }
+      
+        else if (construir == 108) {
+            receita.src= 'imgTelareceita/ReceitaFoguete.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 109) {
+            receita.src= 'imgTelareceita/ReceitaEstrela.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 110) {
+            receita.src= 'imgTelareceita/ReceitaLaço.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 111) {
+            receita.src= 'imgTelareceita/ReceitaTapete.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 112) {
+            receita.src= 'imgTelareceita/ReceitaPainel.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 113) {
+            receita.src= 'imgTelareceita/ReceitaCouro.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 114) {
+            receita.src= 'imgTelareceita/ReceitaBanner.png' 
+            hdr.style.display = 'none'  
+        }
+        
+        else if (construir == 115) {
+            receita.src= 'imgTelareceita/ReceitaStand.png' 
+            hdr.style.display = 'none'  
+        }
+           else if (construir == 116) {
+            receita.src= 'imgTelareceita/ReceitaEndRod.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 117) {
+            receita.src= 'imgTelareceita/ReceitaEndCrystal.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 118) {
+            receita.src= 'imgTelareceita/ReceitaNugget.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 119) {
+            receita.src= 'imgTelareceita/ReceitaConcreto.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 120) {
+            receita.src= 'imgTelareceita/ReceitaFogueira.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 121   ) {
+            receita.src= 'imgTelareceita/ReceitaAndaime.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 122   ) {
+            receita.src= 'imgTelareceita/ReceitaBarril.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 123   ) {
+            receita.src= 'imgTelareceita/ReceitaFornalha2.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 124   ) {
+            receita.src= 'imgTelareceita/ReceitaFumaça.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 125   ) {
+            receita.src= 'imgTelareceita/ReceitaMesaGeografia.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 126   ) {
+            receita.src= 'imgTelareceita/ReceitaComposteira.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 127   ) {
+            receita.src= 'imgTelareceita/ReceitaMesaFlecha.png' 
+            hdr.style.display = 'none'  
+        }
+       
+        else if (construir == 128   ) {
+            receita.src= 'imgTelareceita/ReceitaMesaFerreiro.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 129   ) {
+            receita.src= 'imgTelareceita/ReceitaCortadorPedra.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 130   ) {
+            receita.src= 'imgTelareceita/ReceitaAmolador.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 131  ) {
+            receita.src= 'imgTelareceita/ReceitaLanterna.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 132  ) {
+            receita.src= 'imgTelareceita/ReceitaAltar.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 133) {
+            receita.src= 'imgTelareceita/ReceitaTear.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 134) {
+            receita.src= 'imgTelareceita/ReceitaComeia.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 135 ) {
+            receita.src= 'imgTelareceita/ReceitaCorrente.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 136  ) {
+            receita.src= 'imgTelareceita/ReceitaBarraNether.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 137  ) {
+            receita.src= 'imgTelareceita/ReceitaTochaAzul.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 138  ) {
+            receita.src= 'imgTelareceita/ReceitaRespaw.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 139  ) {
+            receita.src= 'imgTelareceita/ReceitaPedraZica.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 140  ) {
+            receita.src= 'imgTelareceita/ReceitaVela.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 141  ) {
+            receita.src= 'imgTelareceita/ReceitaVelaBranca.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 142  ) {
+            receita.src= 'imgTelareceita/ReceitaMolduraZica.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 143  ) {
+            receita.src= 'imgTelareceita/ReceitaParaRaio.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 144  ) {
+            receita.src= 'imgTelareceita/ReceitaTapeteGrama.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 145  ) {
+            receita.src= 'imgTelareceita/ReceitaVidroFosco.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 146  ) {
+            receita.src= 'imgTelareceita/ReceitaCoranteVermelho.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 147  ) {
+            receita.src= 'imgTelareceita/ReceitaCoranteAmarelo.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 148  ) {
+            receita.src= 'imgTelareceita/ReceitaCoranteCiano.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 149  ) {
+            receita.src= 'imgTelareceita/ReceitaCoranteRosa.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 150  ) {
+            receita.src= 'imgTelareceita/ReceitaCoranteRoxo.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 151  ) {
+            receita.src= 'imgTelareceita/ReceitaCoranteQuaseRoxo.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 152  ) {
+            receita.src= 'imgTelareceita/ReceitaCoranteVerde.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 153  ) {
+            receita.src= 'imgTelareceita/ReceitaCoranteAzulBB.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 154  ) {
+            receita.src= 'imgTelareceita/ReceitaCoranteLaranja.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 155  ) {
+         receita.src= 'imgTelareceita/ReceitaCoranteBege.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 156  ) {
+            receita.src= 'imgTelareceita/ReceitaCoranteCinza.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 157  ) {
+            receita.src= 'imgTelareceita/ReceitaFarinha.png' 
+            hdr.style.display = 'none'  
+        }
+        
+        else if (construir == 158  ) {
+            receita.src= 'imgTelareceita/ReceitaCoranteBranco.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 159  ) {
+            receita.src= 'imgTelareceita/ReceitaCoranteAzul.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 160  ) {
+            receita.src= 'imgTelareceita/ReceitaCoranteMarrom.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 161  ) {
+            receita.src= 'imgTelareceita/ReceitaCorantePreto.gif' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 162  ) {
+            receita.src= 'imgTelareceita/ReceitaLaCinza.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 163  ) {
+            receita.src= 'imgTelareceita/ReceitaLaRosa.png' 
+            hdr.style.display = 'none'  
+        }
+      
+        else if (construir == 164  ) {
+            receita.src= 'imgTelareceita/ReceitaLaVerde.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 165  ) {
+            receita.src= 'imgTelareceita/ReceitaLaVermelha.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 166  ) {
+            receita.src= 'imgTelareceita/ReceitaLaMusgo.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 167  ) {
+            receita.src= 'imgTelareceita/ReceitaLaPreta.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 168  ) {
+            receita.src= 'imgTelareceita/ReceitaLaRoxa.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 169  ) {
+            receita.src= 'imgTelareceita/ReceitaLaAzul.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 170  ) {
+            receita.src= 'imgTelareceita/ReceitaLaLaranja.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 171  ) {
+            receita.src= 'imgTelareceita/ReceitaLaMarrom.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 172  ) {
+            receita.src= 'imgTelareceita/ReceitaLaAmarela.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 173  ) {
+            receita.src= 'imgTelareceita/ReceitaLaCiano.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 174  ) {
+            receita.src= 'imgTelareceita/ReceitaLaAzulBB.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 175  ) {
+            receita.src= 'imgTelareceita/ReceitaLaMagenta.png' 
+            hdr.style.display = 'none'  
+        }
+        else if (construir == 176  ) {
+            receita.src= 'imgTelareceita/ReceitaLaFumaça.png' 
+            hdr.style.display = 'none'  
+        }
+    }
+</script>

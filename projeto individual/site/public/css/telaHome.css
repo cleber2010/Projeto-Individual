@@ -1,0 +1,161 @@
+
+html, body{
+    margin:0px !important;
+    padding: 0px !important;
+     font-family: "Ubuntu Condensed","Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+     background-image: url('End_Stone_background_BE2.webp');
+     /* background-size: cover; */
+     font-family: 'minecraft';
+ }
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-image: url('mariana-salimena-axolotl-03.jpg');
+    background-size: cover;
+    margin: none;
+    justify-content: center;
+}
+
+.hello {
+  text-align: center;
+  padding-bottom: 32px;
+  color: #fff;
+}
+
+
+
+.navbar{
+    float: left; 
+    display: flex ; 
+    color: rgb(43, 119, 219);
+    text-align: center;
+    justify-content: space-around;
+    text-decoration: none; 
+    background-color: beige;
+    width: 100%;
+    vertical-align: middle;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-family: 'minecraft';
+}
+
+.item{
+    display: flex;
+    /* margin-right: 228px; */
+    font-size: 24px;
+    white-space: nowrap;
+    color: rgb(150, 24, 108);
+    font-family: "Ubuntu Condensed","Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    align-items: center;
+}
+
+.item img{
+    height: 40px;
+  margin: 2px;
+  
+}
+
+
+.bemVindo{
+    width: 100%;
+    height: 800px;
+  background-image: url('End_Stone_background_BE2.webp');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.bemVindoImg{
+    width: 80%;
+    height: 800px;
+    background-image: url('imgTelahome/bemvindo.jpg');
+    background-size: cover;
+
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+/*  image */
+.img1 {
+    background-image: url('imgTelahome/warden_car.webp');
+    width:  459px;
+    padding: 20px;
+   
+  }
+.img2 {
+    background-image: url('WildUpdate_Trailer1_carousel.webp');
+    width:  459px;
+    padding: 20px;
+   
+  }
+.img3 {
+    background-image: url('WildUpdate_Trailer2_carousel.webp');
+    width:  459px;
+    padding: 20px;
+   background-size: cover;
+  }
+.img4 {
+    background-image: url('Minecraft_Yr3_NET_440x250.webp');
+    width:  459px;
+    padding: 20px;
+    background-size: cover;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    width: 500px;
+    margin-bottom: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+   
+  }
+  .card:hover{
+ /* -webkit-transform: scale(1.5); */
+    transform: scale(1.09); 
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+.footer {
+    padding: 20px; /* Some padding */
+    text-align: center; /* Center text*/
+    background: #ddd; /* Grey background */
+  }
+
+  a{
+    display: flex;
+    text-decoration: none;
+    white-space: nowrap;
+    color: rgb(150, 24, 108);
+    font-family: "Ubuntu Condensed","Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    align-items: center;
+}
+
+.header a{
+   
+    display: inline-block;
+    
+    text-align: center;
+    
+   
+   
+    color: aliceblue;
+    font-family: 'minecraft';
+}
